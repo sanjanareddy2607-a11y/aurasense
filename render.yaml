@@ -1,0 +1,49 @@
+services:
+  - type: web
+    name: aurasense-api
+    runtime: python
+    plan: starter
+    region: oregon
+    rootDir: backend
+    buildCommand: pip install --upgrade pip && pip install -r requirements.txt
+    preDeployCommand: python -m app.seed
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /api/health
+    autoDeploy: true
+    disk:
+      name: aurasense-data
+      mountPath: /var/data
+      sizeGB: 1
+    envVars:
+      - key: PYTHON_VERSION
+        value: "3.14.4"
+      - key: AURASENSE_ENV
+        value: production
+      - key: SECRET_KEY
+        generateValue: true
+      - key: ACCESS_TOKEN_MINUTES
+        value: "720"
+      - key: DATABASE_URL
+        value: sqlite:////var/data/aurasense.db
+      - key: DATA_DIR
+        value: /var/data
+      - key: STORAGE_DIR
+        value: /var/data/storage
+      - key: SEED_DEMO
+        value: "1"
+      - key: MAX_UPLOAD_BYTES
+        value: "12582912"
+      - key: INSTITUTION_MIN_COHORT
+        value: "5"
+      - key: CORS_ORIGINS
+        sync: false
+      - key: RESEARCH_INVITE_CODE
+        sync: false
+      - key: DEMO_INDIVIDUAL_PASSWORD
+        sync: false
+      - key: DEMO_RESEARCHER_PASSWORD
+        sync: false
+      - key: DEMO_ADMIN_PASSWORD
+        sync: false
+      - key: DEMO_COHORT_PASSWORD
+        sync: false

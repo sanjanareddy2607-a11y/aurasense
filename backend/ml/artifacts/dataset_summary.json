@@ -1,0 +1,161 @@
+{
+  "participants": [
+    "S10",
+    "S11",
+    "S13",
+    "S14",
+    "S15",
+    "S16",
+    "S17",
+    "S2",
+    "S3",
+    "S4",
+    "S5",
+    "S6",
+    "S7",
+    "S8",
+    "S9"
+  ],
+  "participant_count": 15,
+  "windows": 1032,
+  "class_distribution": {
+    "neutral": 562,
+    "stress": 307,
+    "amusement": 163
+  },
+  "class_distribution_by_subject": {
+    "S10": {
+      "neutral": 38,
+      "stress": 22,
+      "amusement": 11
+    },
+    "S11": {
+      "neutral": 38,
+      "stress": 21,
+      "amusement": 11
+    },
+    "S13": {
+      "neutral": 38,
+      "stress": 21,
+      "amusement": 11
+    },
+    "S14": {
+      "neutral": 38,
+      "stress": 21,
+      "amusement": 11
+    },
+    "S15": {
+      "neutral": 38,
+      "stress": 21,
+      "amusement": 11
+    },
+    "S16": {
+      "neutral": 37,
+      "stress": 20,
+      "amusement": 11
+    },
+    "S17": {
+      "neutral": 38,
+      "stress": 23,
+      "amusement": 11
+    },
+    "S2": {
+      "neutral": 36,
+      "stress": 19,
+      "amusement": 11
+    },
+    "S3": {
+      "neutral": 36,
+      "stress": 20,
+      "amusement": 11
+    },
+    "S4": {
+      "neutral": 37,
+      "stress": 19,
+      "amusement": 11
+    },
+    "S5": {
+      "neutral": 38,
+      "stress": 20,
+      "amusement": 11
+    },
+    "S6": {
+      "neutral": 37,
+      "stress": 20,
+      "amusement": 11
+    },
+    "S7": {
+      "neutral": 38,
+      "stress": 19,
+      "amusement": 11
+    },
+    "S8": {
+      "neutral": 37,
+      "stress": 21,
+      "amusement": 10
+    },
+    "S9": {
+      "neutral": 38,
+      "stress": 20,
+      "amusement": 10
+    }
+  },
+  "channels": {
+    "chest": [
+      "ECG",
+      "EDA",
+      "EMG",
+      "Resp",
+      "Temp",
+      "ACC (x,y,z)"
+    ],
+    "wrist": [
+      "BVP",
+      "EDA",
+      "TEMP",
+      "ACC (x,y,z)"
+    ]
+  },
+  "sampling_rates": {
+    "chest_hz": 700,
+    "wrist_bvp_hz": 64,
+    "wrist_eda_hz": 4,
+    "wrist_temp_hz": 4,
+    "wrist_acc_hz": 32
+  },
+  "window_seconds": 60.0,
+  "step_seconds": 30.0,
+  "label_mapping": {
+    "1": "neutral",
+    "2": "stress",
+    "3": "amusement"
+  },
+  "excluded_labels": "not defined (0), meditation (4), transitions with <90% label coverage",
+  "missing_feature_percent": {
+    "start_seconds": 0.0,
+    "end_seconds": 0.0,
+    "label_id": 0.0,
+    "label_coverage": 0.0,
+    "quality_score": 0.0,
+    "hr_mean": 0.0,
+    "hr_std": 0.0,
+    "rmssd": 0.0,
+    "sdnn": 0.0,
+    "pnn50": 0.0,
+    "eda_mean": 0.0,
+    "eda_std": 0.0,
+    "eda_slope": 0.0,
+    "eda_phasic_std": 0.0,
+    "scr_count": 0.0,
+    "scr_amp_sum": 0.0,
+    "resp_rate": 0.0,
+    "resp_rate_std": 0.0,
+    "resp_amp": 0.0,
+    "temp_mean": 0.0,
+    "temp_std": 0.0,
+    "temp_slope": 0.0,
+    "emg_rms": 0.0,
+    "acc_mag_mean": 0.0,
+    "acc_mag_std": 0.0
+  }
+}

@@ -1,0 +1,51 @@
+# ---------------------------------------------------------------------------
+# Secrets and local credentials
+# ---------------------------------------------------------------------------
+.env
+.env.*
+!.env.example
+.deploy-credentials.txt
+*.pem
+*.key
+
+# ---------------------------------------------------------------------------
+# Python
+# ---------------------------------------------------------------------------
+backend/.venv/
+.venv/
+**/__pycache__/
+*.py[cod]
+.pytest_cache/
+backend/.pytest_cache/
+*.egg-info/
+
+# ---------------------------------------------------------------------------
+# Runtime data, uploads and generated reports
+# These are recreated by the application; production data lives on a disk.
+# ---------------------------------------------------------------------------
+backend/data/
+backend/storage/
+backend/aurasense.db
+*.log
+
+# ---------------------------------------------------------------------------
+# Frontend
+# ---------------------------------------------------------------------------
+node_modules/
+frontend/node_modules/
+frontend/dist/
+.vite/
+
+# ---------------------------------------------------------------------------
+# Local deployment tooling and editor/OS files
+# ---------------------------------------------------------------------------
+.tools/
+.freebuff/
+.DS_Store
+Thumbs.db
+
+# ---------------------------------------------------------------------------
+# IMPORTANT: do NOT ignore backend/ml/artifacts
+# model.joblib, metrics.json, dataset_summary.json, wesad_features.csv and
+# features/ are required for inference, research metrics and demo seeding.
+# ---------------------------------------------------------------------------

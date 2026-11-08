@@ -1,0 +1,1003 @@
+{
+  "generated_at": "2026-11-07T09:06:12.954055+00:00",
+  "dataset": "WESAD (Schmidt & Reiss, 2018)",
+  "dataset_citation": "Schmidt, P., & Reiss, A. (2018). WESAD. DOI: 10.24432/C57K5T",
+  "evaluation_strategy": "5-fold GroupKFold grouped by participant (no window leakage)",
+  "windows": 1032,
+  "participants": 15,
+  "class_distribution": {
+    "neutral": 562,
+    "stress": 307,
+    "amusement": 163
+  },
+  "classes": [
+    "neutral",
+    "stress",
+    "amusement"
+  ],
+  "models": [
+    {
+      "model": "Random Forest",
+      "metrics": {
+        "accuracy": 0.8236,
+        "balanced_accuracy": 0.6968,
+        "precision_macro": 0.7728,
+        "recall_macro": 0.6968,
+        "f1_macro": 0.7005,
+        "f1_weighted": 0.7958,
+        "confusion_matrix": [
+          [
+            531,
+            22,
+            9
+          ],
+          [
+            13,
+            282,
+            12
+          ],
+          [
+            101,
+            25,
+            37
+          ]
+        ],
+        "per_class": {
+          "neutral": {
+            "precision": 0.8233,
+            "recall": 0.9448,
+            "f1": 0.8799,
+            "support": 562
+          },
+          "stress": {
+            "precision": 0.8571,
+            "recall": 0.9186,
+            "f1": 0.8868,
+            "support": 307
+          },
+          "amusement": {
+            "precision": 0.6379,
+            "recall": 0.227,
+            "f1": 0.3348,
+            "support": 163
+          }
+        },
+        "n_test_windows": 1032,
+        "fold_balanced_accuracy": [
+          0.7468,
+          0.7684,
+          0.6617,
+          0.707,
+          0.6007
+        ],
+        "fold_accuracy": [
+          0.8744,
+          0.8647,
+          0.8107,
+          0.8398,
+          0.7282
+        ],
+        "balanced_accuracy_std": 0.0603
+      },
+      "per_subject": {
+        "S10": {
+          "accuracy": 0.8873,
+          "balanced_accuracy": 0.8158,
+          "windows": 71
+        },
+        "S11": {
+          "accuracy": 0.8714,
+          "balanced_accuracy": 0.7273,
+          "windows": 70
+        },
+        "S13": {
+          "accuracy": 0.6143,
+          "balanced_accuracy": 0.5263,
+          "windows": 70
+        },
+        "S14": {
+          "accuracy": 0.7857,
+          "balanced_accuracy": 0.6316,
+          "windows": 70
+        },
+        "S15": {
+          "accuracy": 0.7,
+          "balanced_accuracy": 0.5079,
+          "windows": 70
+        },
+        "S16": {
+          "accuracy": 0.8971,
+          "balanced_accuracy": 0.8092,
+          "windows": 68
+        },
+        "S17": {
+          "accuracy": 0.8333,
+          "balanced_accuracy": 0.6522,
+          "windows": 72
+        },
+        "S2": {
+          "accuracy": 0.8636,
+          "balanced_accuracy": 0.7528,
+          "windows": 66
+        },
+        "S3": {
+          "accuracy": 0.8209,
+          "balanced_accuracy": 0.65,
+          "windows": 67
+        },
+        "S4": {
+          "accuracy": 0.8507,
+          "balanced_accuracy": 0.7097,
+          "windows": 67
+        },
+        "S5": {
+          "accuracy": 0.8841,
+          "balanced_accuracy": 0.7791,
+          "windows": 69
+        },
+        "S6": {
+          "accuracy": 0.8382,
+          "balanced_accuracy": 0.7229,
+          "windows": 68
+        },
+        "S7": {
+          "accuracy": 0.9706,
+          "balanced_accuracy": 0.9394,
+          "windows": 68
+        },
+        "S8": {
+          "accuracy": 0.8088,
+          "balanced_accuracy": 0.6746,
+          "windows": 68
+        },
+        "S9": {
+          "accuracy": 0.7353,
+          "balanced_accuracy": 0.5491,
+          "windows": 68
+        }
+      },
+      "mean_subject_balanced_accuracy": 0.6965
+    },
+    {
+      "model": "Support Vector Machine",
+      "metrics": {
+        "accuracy": 0.6589,
+        "balanced_accuracy": 0.6938,
+        "precision_macro": 0.6531,
+        "recall_macro": 0.6938,
+        "f1_macro": 0.6419,
+        "f1_weighted": 0.6767,
+        "confusion_matrix": [
+          [
+            326,
+            60,
+            176
+          ],
+          [
+            32,
+            233,
+            42
+          ],
+          [
+            22,
+            20,
+            121
+          ]
+        ],
+        "per_class": {
+          "neutral": {
+            "precision": 0.8579,
+            "recall": 0.5801,
+            "f1": 0.6921,
+            "support": 562
+          },
+          "stress": {
+            "precision": 0.7444,
+            "recall": 0.759,
+            "f1": 0.7516,
+            "support": 307
+          },
+          "amusement": {
+            "precision": 0.3569,
+            "recall": 0.7423,
+            "f1": 0.4821,
+            "support": 163
+          }
+        },
+        "n_test_windows": 1032,
+        "fold_balanced_accuracy": [
+          0.7784,
+          0.6478,
+          0.5387,
+          0.7362,
+          0.7692
+        ],
+        "fold_accuracy": [
+          0.7874,
+          0.4976,
+          0.5583,
+          0.6505,
+          0.801
+        ],
+        "balanced_accuracy_std": 0.0903
+      },
+      "per_subject": {
+        "S10": {
+          "accuracy": 0.4648,
+          "balanced_accuracy": 0.6348,
+          "windows": 71
+        },
+        "S11": {
+          "accuracy": 0.6286,
+          "balanced_accuracy": 0.6643,
+          "windows": 70
+        },
+        "S13": {
+          "accuracy": 0.8143,
+          "balanced_accuracy": 0.7137,
+          "windows": 70
+        },
+        "S14": {
+          "accuracy": 0.4,
+          "balanced_accuracy": 0.5745,
+          "windows": 70
+        },
+        "S15": {
+          "accuracy": 0.7,
+          "balanced_accuracy": 0.5224,
+          "windows": 70
+        },
+        "S16": {
+          "accuracy": 0.4412,
+          "balanced_accuracy": 0.6364,
+          "windows": 68
+        },
+        "S17": {
+          "accuracy": 0.9167,
+          "balanced_accuracy": 0.8182,
+          "windows": 72
+        },
+        "S2": {
+          "accuracy": 0.3333,
+          "balanced_accuracy": 0.4135,
+          "windows": 66
+        },
+        "S3": {
+          "accuracy": 0.7463,
+          "balanced_accuracy": 0.703,
+          "windows": 67
+        },
+        "S4": {
+          "accuracy": 0.6716,
+          "balanced_accuracy": 0.7933,
+          "windows": 67
+        },
+        "S5": {
+          "accuracy": 0.8841,
+          "balanced_accuracy": 0.8437,
+          "windows": 69
+        },
+        "S6": {
+          "accuracy": 0.8529,
+          "balanced_accuracy": 0.8597,
+          "windows": 68
+        },
+        "S7": {
+          "accuracy": 0.6912,
+          "balanced_accuracy": 0.807,
+          "windows": 68
+        },
+        "S8": {
+          "accuracy": 0.5882,
+          "balanced_accuracy": 0.6754,
+          "windows": 68
+        },
+        "S9": {
+          "accuracy": 0.7353,
+          "balanced_accuracy": 0.7395,
+          "windows": 68
+        }
+      },
+      "mean_subject_balanced_accuracy": 0.6933
+    },
+    {
+      "model": "Gradient Boosting",
+      "metrics": {
+        "accuracy": 0.8275,
+        "balanced_accuracy": 0.7693,
+        "precision_macro": 0.7664,
+        "recall_macro": 0.7693,
+        "f1_macro": 0.767,
+        "f1_weighted": 0.8257,
+        "confusion_matrix": [
+          [
+            488,
+            29,
+            45
+          ],
+          [
+            7,
+            280,
+            20
+          ],
+          [
+            51,
+            26,
+            86
+          ]
+        ],
+        "per_class": {
+          "neutral": {
+            "precision": 0.8938,
+            "recall": 0.8683,
+            "f1": 0.8809,
+            "support": 562
+          },
+          "stress": {
+            "precision": 0.8358,
+            "recall": 0.9121,
+            "f1": 0.8723,
+            "support": 307
+          },
+          "amusement": {
+            "precision": 0.5695,
+            "recall": 0.5276,
+            "f1": 0.5478,
+            "support": 163
+          }
+        },
+        "n_test_windows": 1032,
+        "fold_balanced_accuracy": [
+          0.7211,
+          0.8881,
+          0.7597,
+          0.8063,
+          0.6731
+        ],
+        "fold_accuracy": [
+          0.8213,
+          0.8937,
+          0.8544,
+          0.8107,
+          0.7573
+        ],
+        "balanced_accuracy_std": 0.0737
+      },
+      "per_subject": {
+        "S10": {
+          "accuracy": 0.8873,
+          "balanced_accuracy": 0.8955,
+          "windows": 71
+        },
+        "S11": {
+          "accuracy": 0.9286,
+          "balanced_accuracy": 0.8485,
+          "windows": 70
+        },
+        "S13": {
+          "accuracy": 0.6286,
+          "balanced_accuracy": 0.5781,
+          "windows": 70
+        },
+        "S14": {
+          "accuracy": 0.6143,
+          "balanced_accuracy": 0.7632,
+          "windows": 70
+        },
+        "S15": {
+          "accuracy": 0.8,
+          "balanced_accuracy": 0.619,
+          "windows": 70
+        },
+        "S16": {
+          "accuracy": 0.9412,
+          "balanced_accuracy": 0.9427,
+          "windows": 68
+        },
+        "S17": {
+          "accuracy": 0.8472,
+          "balanced_accuracy": 0.6825,
+          "windows": 72
+        },
+        "S2": {
+          "accuracy": 0.8333,
+          "balanced_accuracy": 0.8025,
+          "windows": 66
+        },
+        "S3": {
+          "accuracy": 0.7761,
+          "balanced_accuracy": 0.6,
+          "windows": 67
+        },
+        "S4": {
+          "accuracy": 0.9851,
+          "balanced_accuracy": 0.9697,
+          "windows": 67
+        },
+        "S5": {
+          "accuracy": 0.8406,
+          "balanced_accuracy": 0.6882,
+          "windows": 69
+        },
+        "S6": {
+          "accuracy": 0.8676,
+          "balanced_accuracy": 0.7622,
+          "windows": 68
+        },
+        "S7": {
+          "accuracy": 0.8382,
+          "balanced_accuracy": 0.882,
+          "windows": 68
+        },
+        "S8": {
+          "accuracy": 0.8529,
+          "balanced_accuracy": 0.8232,
+          "windows": 68
+        },
+        "S9": {
+          "accuracy": 0.7794,
+          "balanced_accuracy": 0.6816,
+          "windows": 68
+        }
+      },
+      "mean_subject_balanced_accuracy": 0.7693
+    }
+  ],
+  "best_model": "Gradient Boosting",
+  "best_model_version": "aura-wesad-20261107-444b41",
+  "feature_importance": [
+    {
+      "feature": "emg_rms",
+      "importance": 0.07713,
+      "share": 0.1701
+    },
+    {
+      "feature": "acc_mag_mean",
+      "importance": 0.04989,
+      "share": 0.11
+    },
+    {
+      "feature": "resp_rate_std",
+      "importance": 0.04918,
+      "share": 0.1085
+    },
+    {
+      "feature": "eda_phasic_std",
+      "importance": 0.03986,
+      "share": 0.0879
+    },
+    {
+      "feature": "hr_mean",
+      "importance": 0.03856,
+      "share": 0.0851
+    },
+    {
+      "feature": "eda_mean",
+      "importance": 0.03353,
+      "share": 0.074
+    },
+    {
+      "feature": "temp_mean",
+      "importance": 0.03063,
+      "share": 0.0676
+    },
+    {
+      "feature": "resp_rate",
+      "importance": 0.02976,
+      "share": 0.0656
+    },
+    {
+      "feature": "sdnn",
+      "importance": 0.02395,
+      "share": 0.0528
+    },
+    {
+      "feature": "resp_amp",
+      "importance": 0.01938,
+      "share": 0.0427
+    },
+    {
+      "feature": "scr_amp_sum",
+      "importance": 0.01562,
+      "share": 0.0344
+    },
+    {
+      "feature": "rmssd",
+      "importance": 0.01243,
+      "share": 0.0274
+    },
+    {
+      "feature": "acc_mag_std",
+      "importance": 0.01108,
+      "share": 0.0244
+    },
+    {
+      "feature": "eda_std",
+      "importance": 0.00817,
+      "share": 0.018
+    },
+    {
+      "feature": "temp_slope",
+      "importance": 0.00461,
+      "share": 0.0102
+    },
+    {
+      "feature": "scr_count",
+      "importance": 0.00426,
+      "share": 0.0094
+    },
+    {
+      "feature": "hr_std",
+      "importance": 0.00391,
+      "share": 0.0086
+    },
+    {
+      "feature": "eda_slope",
+      "importance": 0.00142,
+      "share": 0.0031
+    },
+    {
+      "feature": "pnn50",
+      "importance": 0.0,
+      "share": 0.0
+    },
+    {
+      "feature": "temp_std",
+      "importance": 0.0,
+      "share": 0.0
+    }
+  ],
+  "per_subject": {
+    "Random Forest": {
+      "S10": {
+        "accuracy": 0.8873,
+        "balanced_accuracy": 0.8158,
+        "windows": 71
+      },
+      "S11": {
+        "accuracy": 0.8714,
+        "balanced_accuracy": 0.7273,
+        "windows": 70
+      },
+      "S13": {
+        "accuracy": 0.6143,
+        "balanced_accuracy": 0.5263,
+        "windows": 70
+      },
+      "S14": {
+        "accuracy": 0.7857,
+        "balanced_accuracy": 0.6316,
+        "windows": 70
+      },
+      "S15": {
+        "accuracy": 0.7,
+        "balanced_accuracy": 0.5079,
+        "windows": 70
+      },
+      "S16": {
+        "accuracy": 0.8971,
+        "balanced_accuracy": 0.8092,
+        "windows": 68
+      },
+      "S17": {
+        "accuracy": 0.8333,
+        "balanced_accuracy": 0.6522,
+        "windows": 72
+      },
+      "S2": {
+        "accuracy": 0.8636,
+        "balanced_accuracy": 0.7528,
+        "windows": 66
+      },
+      "S3": {
+        "accuracy": 0.8209,
+        "balanced_accuracy": 0.65,
+        "windows": 67
+      },
+      "S4": {
+        "accuracy": 0.8507,
+        "balanced_accuracy": 0.7097,
+        "windows": 67
+      },
+      "S5": {
+        "accuracy": 0.8841,
+        "balanced_accuracy": 0.7791,
+        "windows": 69
+      },
+      "S6": {
+        "accuracy": 0.8382,
+        "balanced_accuracy": 0.7229,
+        "windows": 68
+      },
+      "S7": {
+        "accuracy": 0.9706,
+        "balanced_accuracy": 0.9394,
+        "windows": 68
+      },
+      "S8": {
+        "accuracy": 0.8088,
+        "balanced_accuracy": 0.6746,
+        "windows": 68
+      },
+      "S9": {
+        "accuracy": 0.7353,
+        "balanced_accuracy": 0.5491,
+        "windows": 68
+      }
+    },
+    "Support Vector Machine": {
+      "S10": {
+        "accuracy": 0.4648,
+        "balanced_accuracy": 0.6348,
+        "windows": 71
+      },
+      "S11": {
+        "accuracy": 0.6286,
+        "balanced_accuracy": 0.6643,
+        "windows": 70
+      },
+      "S13": {
+        "accuracy": 0.8143,
+        "balanced_accuracy": 0.7137,
+        "windows": 70
+      },
+      "S14": {
+        "accuracy": 0.4,
+        "balanced_accuracy": 0.5745,
+        "windows": 70
+      },
+      "S15": {
+        "accuracy": 0.7,
+        "balanced_accuracy": 0.5224,
+        "windows": 70
+      },
+      "S16": {
+        "accuracy": 0.4412,
+        "balanced_accuracy": 0.6364,
+        "windows": 68
+      },
+      "S17": {
+        "accuracy": 0.9167,
+        "balanced_accuracy": 0.8182,
+        "windows": 72
+      },
+      "S2": {
+        "accuracy": 0.3333,
+        "balanced_accuracy": 0.4135,
+        "windows": 66
+      },
+      "S3": {
+        "accuracy": 0.7463,
+        "balanced_accuracy": 0.703,
+        "windows": 67
+      },
+      "S4": {
+        "accuracy": 0.6716,
+        "balanced_accuracy": 0.7933,
+        "windows": 67
+      },
+      "S5": {
+        "accuracy": 0.8841,
+        "balanced_accuracy": 0.8437,
+        "windows": 69
+      },
+      "S6": {
+        "accuracy": 0.8529,
+        "balanced_accuracy": 0.8597,
+        "windows": 68
+      },
+      "S7": {
+        "accuracy": 0.6912,
+        "balanced_accuracy": 0.807,
+        "windows": 68
+      },
+      "S8": {
+        "accuracy": 0.5882,
+        "balanced_accuracy": 0.6754,
+        "windows": 68
+      },
+      "S9": {
+        "accuracy": 0.7353,
+        "balanced_accuracy": 0.7395,
+        "windows": 68
+      }
+    },
+    "Gradient Boosting": {
+      "S10": {
+        "accuracy": 0.8873,
+        "balanced_accuracy": 0.8955,
+        "windows": 71
+      },
+      "S11": {
+        "accuracy": 0.9286,
+        "balanced_accuracy": 0.8485,
+        "windows": 70
+      },
+      "S13": {
+        "accuracy": 0.6286,
+        "balanced_accuracy": 0.5781,
+        "windows": 70
+      },
+      "S14": {
+        "accuracy": 0.6143,
+        "balanced_accuracy": 0.7632,
+        "windows": 70
+      },
+      "S15": {
+        "accuracy": 0.8,
+        "balanced_accuracy": 0.619,
+        "windows": 70
+      },
+      "S16": {
+        "accuracy": 0.9412,
+        "balanced_accuracy": 0.9427,
+        "windows": 68
+      },
+      "S17": {
+        "accuracy": 0.8472,
+        "balanced_accuracy": 0.6825,
+        "windows": 72
+      },
+      "S2": {
+        "accuracy": 0.8333,
+        "balanced_accuracy": 0.8025,
+        "windows": 66
+      },
+      "S3": {
+        "accuracy": 0.7761,
+        "balanced_accuracy": 0.6,
+        "windows": 67
+      },
+      "S4": {
+        "accuracy": 0.9851,
+        "balanced_accuracy": 0.9697,
+        "windows": 67
+      },
+      "S5": {
+        "accuracy": 0.8406,
+        "balanced_accuracy": 0.6882,
+        "windows": 69
+      },
+      "S6": {
+        "accuracy": 0.8676,
+        "balanced_accuracy": 0.7622,
+        "windows": 68
+      },
+      "S7": {
+        "accuracy": 0.8382,
+        "balanced_accuracy": 0.882,
+        "windows": 68
+      },
+      "S8": {
+        "accuracy": 0.8529,
+        "balanced_accuracy": 0.8232,
+        "windows": 68
+      },
+      "S9": {
+        "accuracy": 0.7794,
+        "balanced_accuracy": 0.6816,
+        "windows": 68
+      }
+    }
+  },
+  "confusion_matrices": {
+    "Random Forest": [
+      [
+        531,
+        22,
+        9
+      ],
+      [
+        13,
+        282,
+        12
+      ],
+      [
+        101,
+        25,
+        37
+      ]
+    ],
+    "Support Vector Machine": [
+      [
+        326,
+        60,
+        176
+      ],
+      [
+        32,
+        233,
+        42
+      ],
+      [
+        22,
+        20,
+        121
+      ]
+    ],
+    "Gradient Boosting": [
+      [
+        488,
+        29,
+        45
+      ],
+      [
+        7,
+        280,
+        20
+      ],
+      [
+        51,
+        26,
+        86
+      ]
+    ]
+  },
+  "dataset_summary": {
+    "participants": [
+      "S10",
+      "S11",
+      "S13",
+      "S14",
+      "S15",
+      "S16",
+      "S17",
+      "S2",
+      "S3",
+      "S4",
+      "S5",
+      "S6",
+      "S7",
+      "S8",
+      "S9"
+    ],
+    "participant_count": 15,
+    "windows": 1032,
+    "class_distribution": {
+      "neutral": 562,
+      "stress": 307,
+      "amusement": 163
+    },
+    "class_distribution_by_subject": {
+      "S10": {
+        "neutral": 38,
+        "stress": 22,
+        "amusement": 11
+      },
+      "S11": {
+        "neutral": 38,
+        "stress": 21,
+        "amusement": 11
+      },
+      "S13": {
+        "neutral": 38,
+        "stress": 21,
+        "amusement": 11
+      },
+      "S14": {
+        "neutral": 38,
+        "stress": 21,
+        "amusement": 11
+      },
+      "S15": {
+        "neutral": 38,
+        "stress": 21,
+        "amusement": 11
+      },
+      "S16": {
+        "neutral": 37,
+        "stress": 20,
+        "amusement": 11
+      },
+      "S17": {
+        "neutral": 38,
+        "stress": 23,
+        "amusement": 11
+      },
+      "S2": {
+        "neutral": 36,
+        "stress": 19,
+        "amusement": 11
+      },
+      "S3": {
+        "neutral": 36,
+        "stress": 20,
+        "amusement": 11
+      },
+      "S4": {
+        "neutral": 37,
+        "stress": 19,
+        "amusement": 11
+      },
+      "S5": {
+        "neutral": 38,
+        "stress": 20,
+        "amusement": 11
+      },
+      "S6": {
+        "neutral": 37,
+        "stress": 20,
+        "amusement": 11
+      },
+      "S7": {
+        "neutral": 38,
+        "stress": 19,
+        "amusement": 11
+      },
+      "S8": {
+        "neutral": 37,
+        "stress": 21,
+        "amusement": 10
+      },
+      "S9": {
+        "neutral": 38,
+        "stress": 20,
+        "amusement": 10
+      }
+    },
+    "channels": {
+      "chest": [
+        "ECG",
+        "EDA",
+        "EMG",
+        "Resp",
+        "Temp",
+        "ACC (x,y,z)"
+      ],
+      "wrist": [
+        "BVP",
+        "EDA",
+        "TEMP",
+        "ACC (x,y,z)"
+      ]
+    },
+    "sampling_rates": {
+      "chest_hz": 700,
+      "wrist_bvp_hz": 64,
+      "wrist_eda_hz": 4,
+      "wrist_temp_hz": 4,
+      "wrist_acc_hz": 32
+    },
+    "window_seconds": 60.0,
+    "step_seconds": 30.0,
+    "label_mapping": {
+      "1": "neutral",
+      "2": "stress",
+      "3": "amusement"
+    },
+    "excluded_labels": "not defined (0), meditation (4), transitions with <90% label coverage",
+    "missing_feature_percent": {
+      "start_seconds": 0.0,
+      "end_seconds": 0.0,
+      "label_id": 0.0,
+      "label_coverage": 0.0,
+      "quality_score": 0.0,
+      "hr_mean": 0.0,
+      "hr_std": 0.0,
+      "rmssd": 0.0,
+      "sdnn": 0.0,
+      "pnn50": 0.0,
+      "eda_mean": 0.0,
+      "eda_std": 0.0,
+      "eda_slope": 0.0,
+      "eda_phasic_std": 0.0,
+      "scr_count": 0.0,
+      "scr_amp_sum": 0.0,
+      "resp_rate": 0.0,
+      "resp_rate_std": 0.0,
+      "resp_amp": 0.0,
+      "temp_mean": 0.0,
+      "temp_std": 0.0,
+      "temp_slope": 0.0,
+      "emg_rms": 0.0,
+      "acc_mag_mean": 0.0,
+      "acc_mag_std": 0.0
+    }
+  },
+  "limitations": [
+    "WESAD contains 15 participants recorded in a laboratory with a specific stress protocol (Trier Social Stress Test), so generalisation to everyday settings is not established.",
+    "Window-level features are correlated within a participant; participant-independent folds remove identity leakage but not within-condition similarity.",
+    "Skin-conductance tonic/phasic separation uses a moving-average estimate rather than a full deconvolution model.",
+    "Feature importance describes model behaviour, not the biological cause of a physiological change."
+  ]
+}
