@@ -36,7 +36,7 @@ services:
       - key: INSTITUTION_MIN_COHORT
         value: "5"
       - key: CORS_ORIGINS
-        sync: false
+        value: https://frontend-one-hazel.vercel.app
       - key: RESEARCH_INVITE_CODE
         sync: false
       - key: DEMO_INDIVIDUAL_PASSWORD
